@@ -1,16 +1,13 @@
-package com.example.firstprojectwithjetpackcompose.features.presentation.breakingNews
+package com.example.firstprojectwithjetpackcompose.features.presentation.home
 
-import android.net.Uri
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.hilt.navigation.compose.hiltViewModel
-import androidx.navigation.NavController
 import androidx.navigation.NavHostController
-import com.example.firstprojectwithjetpackcompose.features.presentation.breakingNews.component.ArticleList
-import com.example.firstprojectwithjetpackcompose.features.presentation.breakingNews.component.ErrorView
-import com.example.firstprojectwithjetpackcompose.features.presentation.breakingNews.component.LoadingView
-import com.google.gson.Gson
+import com.example.firstprojectwithjetpackcompose.features.presentation.home.component.ArticleList
+import com.example.firstprojectwithjetpackcompose.features.presentation.home.component.ErrorView
+import com.example.firstprojectwithjetpackcompose.features.presentation.home.component.LoadingView
 
 @Composable
 fun BreakingNewsScreen(

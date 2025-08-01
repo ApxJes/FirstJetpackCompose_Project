@@ -1,4 +1,4 @@
-package com.example.firstprojectwithjetpackcompose.features.presentation.breakingNews.component
+package com.example.firstprojectwithjetpackcompose.features.presentation.home.component
 
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.fillMaxSize

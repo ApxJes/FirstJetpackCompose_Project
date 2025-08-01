@@ -18,7 +18,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             navHostController = rememberNavController()
-            SetUpNavGraph(navController = navHostController)
+            MyBottomAppBar(navController = navHostController)
         }
     }
 }

@@ -1,4 +1,4 @@
-package com.example.firstprojectwithjetpackcompose.features.presentation.breakingNews
+package com.example.firstprojectwithjetpackcompose.features.presentation.home
 
 import com.example.firstprojectwithjetpackcompose.features.domain.model.ArticleVo
 
