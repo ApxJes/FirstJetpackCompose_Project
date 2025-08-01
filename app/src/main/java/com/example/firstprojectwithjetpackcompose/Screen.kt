@@ -1,4 +1,4 @@
-package com.example.firstprojectwithjetpackcompose.features.presentation.screen
+package com.example.firstprojectwithjetpackcompose
 
 sealed class Screen(
     val route: String

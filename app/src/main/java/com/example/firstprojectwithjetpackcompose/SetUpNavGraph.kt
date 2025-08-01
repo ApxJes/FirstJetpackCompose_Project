@@ -1,6 +1,8 @@
 package com.example.firstprojectwithjetpackcompose
 
+import androidx.compose.foundation.layout.systemBarsPadding
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Modifier
 import androidx.navigation.NavHostController
 import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
@@ -8,7 +10,7 @@ import androidx.navigation.compose.composable
 import androidx.navigation.navArgument
 import com.example.firstprojectwithjetpackcompose.features.presentation.breakingNews.BreakingNewsScreen
 import com.example.firstprojectwithjetpackcompose.features.presentation.newsDetails.NewsDetailScreen
-import com.example.firstprojectwithjetpackcompose.features.presentation.screen.Screen
+import com.example.firstprojectwithjetpackcompose.Screen
 import java.net.URLDecoder
 import java.nio.charset.StandardCharsets
 
@@ -18,7 +20,8 @@ fun SetUpNavGraph(
 ) {
     NavHost(
         navController = navController,
-        startDestination = Screen.BreakingNews.route
+        startDestination = Screen.BreakingNews.route,
+        modifier = Modifier.systemBarsPadding()
     ) {
         composable(
             route = Screen.BreakingNews.route

@@ -29,7 +29,7 @@ import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
 import coil.compose.rememberAsyncImagePainter
 import com.example.firstprojectwithjetpackcompose.features.domain.model.ArticleVo
-import com.example.firstprojectwithjetpackcompose.features.presentation.screen.Screen
+import com.example.firstprojectwithjetpackcompose.Screen
 import java.net.URLEncoder
 import java.nio.charset.StandardCharsets
 
