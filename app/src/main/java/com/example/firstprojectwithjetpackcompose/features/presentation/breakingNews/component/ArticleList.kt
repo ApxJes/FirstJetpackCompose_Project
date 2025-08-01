@@ -7,16 +7,20 @@ import androidx.compose.foundation.lazy.items
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import androidx.navigation.NavHostController
 import com.example.firstprojectwithjetpackcompose.features.domain.model.ArticleVo
 
 @Composable
-fun ArticleList(articles: List<ArticleVo>) {
+fun ArticleList(
+    articles: List<ArticleVo>,
+    navHostController: NavHostController
+) {
     LazyColumn(
         modifier = Modifier.fillMaxSize(),
         contentPadding = PaddingValues(vertical = 8.dp)
     ) {
-        items(articles) { article ->
-            ArticleItem(article = article)
+        items(articles, key = { it.url }) { article ->
+            ArticleItem(article = article, navHostController = navHostController)
         }
     }
 }

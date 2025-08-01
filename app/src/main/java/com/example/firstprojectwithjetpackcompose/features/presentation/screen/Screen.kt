@@ -1,7 +1,10 @@
 package com.example.firstprojectwithjetpackcompose.features.presentation.screen
 
 sealed class Screen(
-    val screen: String
+    val route: String
 ) {
-    data object BreakingNews: Screen(screen = "breaking_news")
+    data object BreakingNews: Screen(route = "breaking_news")
+    data object NewsDetails: Screen(route = "details_screen/{articleUrl}") {
+        fun createRoute(url: String) = "details_screen/$url"
+    }
 }
